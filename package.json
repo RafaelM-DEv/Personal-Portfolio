@@ -12,6 +12,7 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
+    "push-dir": "^0.4.1",
     "tippy.js": "^6.3.7"
   }
 }
