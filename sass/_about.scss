@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  margin: 0 5%;
+  color: white;
+  margin-top: 80px;
+  scroll-snap-align: start;
+  scroll-margin: 100px;
+
+  &__context {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 10px 0;
+  }
+
+  &__text {
+    margin-top: 20px;
+    width: 500px;
+  }
+
+  &__icon {
+    margin-right: 150px;
+    img {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.footer {
+  background-color: $primary;
+  width: 100%;
+  height: 400px;
+  padding: 0 5%;
+  display: flex;
+  box-shadow: 0 0 130px rgba($color: $primary, $alpha: .4);
+  justify-content: center;
+  flex-direction: column;
+  scroll-snap-align: start;
+  scroll-margin: 100px;
+  
+  &__typer {
+    color: white !important;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px white;  
+    font-weight: 700;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+    margin: 5px 0;
+    span {
+      margin: 5px 0;
+    }
+  }
+
+  &__socials {
+    img {
+      width: 25px;
+      margin: 5px 10px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    align-self: flex-end;
+    justify-self: end;
+    img {
+      width: 250px;
+    }
+  }
+}
+
+.typer {
+  // font-size: 30px;
+  text-shadow: 1px 1px 1px white;
+}

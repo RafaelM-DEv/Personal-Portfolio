@@ -1,0 +1,33 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  margin: 0 5%;
+  color: white;
+  margin-top: 80px;
+  scroll-snap-align: start;
+  scroll-margin: 140px;
+
+  &__context {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__icon {
+    margin-top: 20px;
+    img {
+      width: 300px;
+    }
+  }
+
+  &__stack {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+  }
+}
