@@ -1,43 +1,15 @@
 .home {
-  margin-top: 60px;
-  display: flex;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  margin: 0 5%;
   scroll-snap-align: start;
   scroll-margin: 100px;
-  
-  &__name {
-    color: $primary;
-    text-shadow: 0 0 20px rgba($color: $primary, $alpha: 0.5);
-  }
-  
-  &__picture {
-    border-radius: 5px;
-    width: 500px;
-  }
+ 
   
   &__typer {
     color: white !important;
-    font-size: 40px;
     text-shadow: 1px 1px 1px white;  
-    font-weight: 700;
   }
   
-  &__socials {
-    // background: red;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-    width: 400px;
-    
+  &__socials {   
     img {
-      width: 30px;
       &:hover {
         border-radius: 6px;
         background-color: $primary;

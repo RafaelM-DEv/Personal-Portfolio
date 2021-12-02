@@ -3,13 +3,13 @@ import 'tippy.js/themes/light.css';
 
 tippy('#me', {
   content: 'Hi, click me to see my bio!',
-  theme: 'light'
+  theme: 'light',
 });
 
 tippy('#facebook', {
   content: 'This is my life!',
   theme: 'light',
-  placement: 'bottom'
+  placement: 'bottom',
 });
 
 tippy('#github', {

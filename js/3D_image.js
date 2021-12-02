@@ -1,5 +1,5 @@
 const container = document.querySelector(".home")
-const card = document.querySelector(".home__card")
+const card = document.querySelector(".card")
 const img = document.querySelector('#me')
 
 container.addEventListener("mousemove", (e) => {

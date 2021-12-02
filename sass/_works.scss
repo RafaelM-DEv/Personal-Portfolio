@@ -1,50 +1,50 @@
 .works {
-  width: 100%;
-  height: 500px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  // width: 100%;
+  // height: 500px;
+  // color: white;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
   scroll-snap-align: start;
   scroll-margin: 100px;
   // background-color: chocolate;
   &__title {
-    width: 100vw;
-    padding-left: 5%;
+    // width: 100vw;
+    // padding-left: 5%;
   }
 
   &__cards {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    div:nth-child(odd) {
-      margin: 0 5%;
-    }
+    // width: 100vw;
+    // height: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // div:nth-child(odd) {
+    //   margin: 0 5%;
+    // }
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    width: 300px;
-    height: 400px;
-    background-color: $secondary;
+    // display: flex;
+    // flex-direction: column;
+    // border-radius: 5px;
+    // width: 300px;
+    // height: 400px;
+    // background-color: $secondary;
   }
 
   &__card-img {
-    min-height: 260px;
-    border-radius: 5px;
+    // min-height: 260px;
+    // border-radius: 5px;
   }
 
   &__card-title {
-    text-align: center;
-    margin: 10px 0;
-    padding: 5px;
+    // text-align: center;
+    // margin: 10px 0;
+    // padding: 5px;
   }
   &__card-description {
     // margin: 10px 0;
-    padding: 5px 5px;
+    // padding: 5px 5px;
   }
 }

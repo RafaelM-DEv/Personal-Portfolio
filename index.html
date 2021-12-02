@@ -7,60 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rafael Martins</title>
   </head>
-  <body>
-    <section class="header">
-      <nav>
-        <span class="header__about"><a href="#home">Rafael</a></span>
-        <span class="header__projects"><a href="#works">Projects</a></span>
-        <span class="header__about"><a href="#about">About</a></span>
-        <span class="header__skills"><a href="#skills">Skills</a></span>
-        <span class="header__contact"><a href="#contact">Contact</a></span>
+  <body class="bg-gradient-to-b from-purple-400 via-pink-500 to-red-500">
+    <!-- TODO virar menu no mobile -->
+    <section class="header fixed flex items-center justify-end z-10 w-screen h-10 pr-3">
+      <nav class="header__navbar slideOut font-bold text-white sm:mr-5">
+        <span class="hover:text-yellow-500"><a href="#home">Rafael</a></span>
+        <span class="ml-1 hover:text-yellow-500"><a href="#works">Projects</a></span>
+        <span class="ml-1 hover:text-yellow-500"><a href="#about">About</a></span>
+        <span class="ml-1 hover:text-yellow-500"><a href="#skills">Skills</a></span>
+        <span class="ml-1 hover:text-yellow-500"><a href="#contact">Contact</a></span>
       </nav>
+      <div class="header__menu sm:hidden mt-5 ml-5"></div>
     </section>
-    <div class="container">
-      <section id="home" class="home">
-        <div>
-          <h1>Hi, </h1>
-          <h1>I'am <span class="home__name">Rafael</span></h1>
-          <span class="typer home__typer" id="main" data-words="Front-end Developer" data-delay="100" data-loop="false"></span>
-          <span class="cursor" data-owner="main"></span>
-          <div class="home__socials">
-            <span id="facebook" ><a href="https://www.facebook.com/Far3ll274" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></span>
-            <span id="github"><a href="https://github.com/RafaelM-DEv" target="_blank"><img src="assets/github.png" alt="github"></a></span>
-            <span id="linkedin"><a href="https://www.linkedin.com/in/dev-rafael-martins/" target="_blank"><img src="assets/logotipo-do-linkedin.png" alt="linkedin"></a></span>
-            <span id="youtube"><a href="https://www.youtube.com/channel/UCIxhg-5UMVEIhLxaJOMRslA" target="_blank"><img src="assets/youtube.png" alt="youtube"></a></span>
-            <span id="instagran"><a href="https://www.instagram.com/rafael_m_274/" target="_blank"><img src="assets/instagram.png" alt="instagran"></a></span>
+    <div class="flex justify-center">
+      <div class="home container h-screen">
+      <section class=" hidden flex-row-reverse w-full gap-10 sm:flex sm:justify-between sm:mx-5 sm:mt-28 lg:justify-center lg:gap-44">
+        <div class="card flex justify-center sm:mr-8">
+          <a href="#about">
+            <img id="me" class="w-full sm:w-[400px]" src="assets/me.png">
+          </a>
+        </div>
+        <div class="flex justify-center sm:h-[400px] items-center">
+          <div class="flex-col text-center justify-center text-white font-bold text-3xl mt-5 sm:text-left"> 
+            <h1 class="hidden sm:block" >Hi,</h1>
+            <h1><span class="sm:hidden">Hi,</span> I am <span class="text-yellow-300">Rafael</span></h1>
+            <span class="typer home__typer" id="main" data-words="Front-end Developer" data-delay="100" data-loop="false"></span>
+            <span class="cursor" data-owner="main"></span>
+            <div class="home__socials flex mt-16 justify-center gap-10">
+              <span id="facebook" class="w-8"><a href="https://www.facebook.com/Far3ll274" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></span>
+              <span id="github" class="w-8"><a href="https://github.com/RafaelM-DEv" target="_blank"><img src="assets/github.png" alt="github"></a></span>
+              <span id="linkedin" class="w-8"><a href="https://www.linkedin.com/in/dev-rafael-martins/" target="_blank"><img src="assets/logotipo-do-linkedin.png" alt="linkedin"></a></span>
+              <span id="youtube" class="w-8"><a href="https://www.youtube.com/channel/UCIxhg-5UMVEIhLxaJOMRslA" target="_blank"><img src="assets/youtube.png" alt="youtube"></a></span>
+              <span id="instagran" class="w-8"><a href="https://www.instagram.com/rafael_m_274/" target="_blank"><img src="assets/instagram.png" alt="instagran"></a></span>
+            </div>
           </div>
         </div>
-        <div class="home__card">
-          <a href="#about"><img id="me" class="home__picture" src="assets/me.png" alt=""></a>
-        </div>
       </section>
-      <section id="works" class="works">
-        <div class="works__title">
+      <section id="works" class="works w-full">
+        <div class="works__title text-white font-bold text-2xl my-10 xl:ml-72">
           <h1>Featured works</h1>
         </div>
-          <div class="works__cards">
-            <div class="works__card">
-              <img class="works__card-img" src="assets/space.png" alt="">
-              <h1 class="works__card-title">Space Clicker</h1>
-              <p class="works__card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
+          <div class="works flex-col flex items-center gap-10 sm:flex-row">
+            <div class="w-[300px] bg-white">
+              <img class="" src="assets/space.png" alt="">
+              <h1 class="">Space Clicker</h1>
+              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
             </div>
 
-            <div class="works__card">
-              <img class="works__card-img" src="assets/clima.png" alt="">
-              <h1 class="works__card-title">Weather-app</h1>
-              <p class="works__card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
+            <div class="w-[300px] bg-white">
+              <img class="" src="assets/clima.png" alt="">
+              <h1 class="">Weather-app</h1>
+              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
             </div>
 
-            <div class="works__card">
-              <img class="works__card-img" src="assets/nave.png" alt="">
-              <h1 class="works__card-title">A Nave</h1>
-              <p class="works__card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
+            <div class="w-[300px] bg-white">
+              <img class="" src="assets/nave.png" alt="">
+              <h1 class="">A Nave</h1>
+              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
             </div>
           </div>
       </section>
-      <section id="about" class="about">
+      <section id="about" class="about hidden">
         <h1 class="about__title">
           About
         </h1>
@@ -81,7 +88,7 @@
           </div>
         </div>
       </section>
-      <section id="skills" class="skills">
+      <section id="skills" class="skills hidden">
         <!-- <h1 class="skills__title">Skills</h1> -->
         <div class="skills__context">
           <div class="skills__icon">
@@ -98,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="footer">
+      <section id="contact" class="footer hidden">
         <div class="footer__typer">
           let's
           <span class="typer footer__typer" id="main" data-words="drink a coffee?,drink a cappuccino?,talk about crazy theories?" data-delay="50" data-deleteDelay="1000"></span>
@@ -124,6 +131,7 @@
         </div>
         <!-- TODO go top <button> -->
       </section>
+      </div>
     </div>
 
     <script type="module" src="/main.js"></script>

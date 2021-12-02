@@ -1,0 +1,68 @@
+.header {
+  position: relative;
+  
+  &__menu {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    border-top: 2px solid white;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 14px;
+      border: 1px solid white;
+      height: 80%;
+      transform: rotate(90deg);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 14px;
+      border: 1px solid white;  
+      height: 80%;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    &__navbar {
+      position: absolute;
+    }
+  }
+  
+  .slideIn {
+    right: 55px;
+    animation: slideIn 0.5s linear;
+  }
+  
+  .slideOut {
+    right: -300px;
+    animation: slideOut 0.5s linear;
+  }
+}
+
+@keyframes slideIn {
+  from { 
+    right: -350px;
+    opacity: 0;
+  }
+
+  to { 
+    right: 55px;  
+  }
+}
+
+@keyframes slideOut {
+  from { 
+    right: 55px;  
+  }
+
+  to { 
+    opacity: 0;
+    right: -300px;
+  }
+}
