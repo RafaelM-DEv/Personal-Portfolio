@@ -9,19 +9,19 @@
   </head>
   <body class="bg-gradient-to-b from-purple-400 via-pink-500 to-red-500">
     <!-- TODO virar menu no mobile -->
-    <section class="header fixed flex items-center justify-end z-10 w-screen h-10 pr-3">
-      <nav class="header__navbar slideOut font-bold text-white sm:mr-5">
-        <span class="hover:text-yellow-500"><a href="#home">Rafael</a></span>
-        <span class="ml-1 hover:text-yellow-500"><a href="#works">Projects</a></span>
-        <span class="ml-1 hover:text-yellow-500"><a href="#about">About</a></span>
-        <span class="ml-1 hover:text-yellow-500"><a href="#skills">Skills</a></span>
-        <span class="ml-1 hover:text-yellow-500"><a href="#contact">Contact</a></span>
-      </nav>
-      <div class="header__menu sm:hidden mt-5 ml-5"></div>
-    </section>
     <div class="flex justify-center">
-      <div class="home container h-screen">
-      <section class=" hidden flex-row-reverse w-full gap-10 sm:flex sm:justify-between sm:mx-5 sm:mt-28 lg:justify-center lg:gap-44">
+      <section class="header container shadow-md rounded-sm fixed flex items-center justify-end z-10 w-screen h-10 pr-3">
+        <nav class="header__navbar slideOut font-bold text-white sm:mr-5">
+          <span class="hover:text-yellow-500"><a href="#home">Rafael</a></span>
+          <span class="ml-1 hover:text-yellow-500"><a href="#works">Projects</a></span>
+          <span class="ml-1 hover:text-yellow-500"><a href="#about">About</a></span>
+          <span class="ml-1 hover:text-yellow-500"><a href="#skills">Skills</a></span>
+          <span class="ml-1 hover:text-yellow-500"><a href="#contact">Contact</a></span>
+        </nav>
+        <div class="header__menu sm:hidden mt-2 ml-5"></div>
+      </section>
+      <div class="ref home container h-screen">
+      <section class="flex-row-reverse w-full h-screen sm:h-3/6 gap-10 sm:flex sm:justify-between sm:mx-5 sm:mt-28 lg:justify-center lg:gap-44">
         <div class="card flex justify-center sm:mr-8">
           <a href="#about">
             <img id="me" class="w-full sm:w-[400px]" src="assets/me.png">
@@ -43,37 +43,38 @@
           </div>
         </div>
       </section>
-      <section id="works" class="works w-full">
-        <div class="works__title text-white font-bold text-2xl my-10 xl:ml-72">
+      <section id="works" class="works w-full my-20">
+        <div class="works__title text-white font-bold text-2xl my-10 text-center">
           <h1>Featured works</h1>
         </div>
-          <div class="works flex-col flex items-center gap-10 sm:flex-row">
-            <div class="w-[300px] bg-white">
-              <img class="" src="assets/space.png" alt="">
-              <h1 class="">Space Clicker</h1>
-              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
+        <!-- TODO futuramente mudar para o carousel -->
+        <div class="works flex-col flex justify-center items-center gap-10 md:flex-row">
+            <!-- TODO Hover -> mudar o fundo com o tema do card -->
+            <div class="card__space shadow-lg w-[300px] sm:h-[350px] md:h-[300px] lg:h-[350px] h-[350px] bg-white rounded">
+              <img class="w-full sm:h-[250px] md:h-[200px] lg:h-[250px] h-[250px] rounded-t" src="assets/space.png" alt="">
+              <h1 class="px-1 py-2 font-bold">Space Clicker</h1>
+              <p class="px-1 pb-3 card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
             </div>
 
-            <div class="w-[300px] bg-white">
-              <img class="" src="assets/clima.png" alt="">
-              <h1 class="">Weather-app</h1>
-              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
+            <div class="card__space shadow-lg w-[300px] sm:h-[350px] md:h-[300px] lg:h-[350px] h-[350px] bg-white rounded">
+              <img class="w-full sm:h-[250px] md:h-[200px] lg:h-[250px] h-[250px] rounded-t" src="assets/clima.png" alt="">
+              <h1 class="px-1 py-2 font-bold">Weather-app</h1>
+              <p class="px-1 pb-3 card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
             </div>
 
-            <div class="w-[300px] bg-white">
-              <img class="" src="assets/nave.png" alt="">
-              <h1 class="">A Nave</h1>
-              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, voluptatibus.</p>
+            <div class="card__space shadow-lg w-[300px] sm:h-[350px] md:h-[300px] lg:h-[350px] h-[350px] bg-white rounded">
+              <img class="w-full sm:h-[250px] md:h-[200px] lg:h-[250px] h-[250px] rounded-t" src="assets/nave.png" alt="">
+              <h1 class="px-2 py-2 font-bold">A Nave</h1>
+              <p class="px-2 pb-3 card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
           </div>
       </section>
-      <section id="about" class="about hidden">
-        <h1 class="about__title">
-          About
-        </h1>
-        <div class="about__context">
-          <div>
-            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sint
+      <section id="about" class="about w-full my-20">
+        <div class="text-white text-2xl font-bold flex justify-center my-10">
+          <h1>About</h1>
+        </div>
+        <div class="w-full flex-col sm:flex sm:flex-row items-center justify-center content-center flex">
+            <p class="w-full sm:w-[80%] px-10 text-justify text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sint
                sit quasi accusamus provident ad ea consectetur quidem eaque ipsa et repudiandae reprehenderit 
                illum fugiat ullam, soluta in, vel debitis sunt non distinctio minus modi. Suscipit unde obcaecati
                veritatis eligendi earum quidem soluta. Omnis, dolor. Quibusdam animi voluptates et provident ab 
@@ -82,19 +83,17 @@
                itecto voluptate vitae natus eaque neque tenetur possimus quod, maiores cupiditate ut iste autem est 
                eveniet, nam eum, repudiandae ullam mollitia.
             </p>
-          </div>
-          <div class="about__icon">
-            <img src="assets/undraw_lost_online_re_upmy.svg" alt="">
-          </div>
+            <div class="w-44 mt-6 sm:mt-0">
+              <img src="assets/undraw_lost_online_re_upmy.svg" alt="">
+            </div>
         </div>
       </section>
-      <section id="skills" class="skills hidden">
-        <!-- <h1 class="skills__title">Skills</h1> -->
-        <div class="skills__context">
-          <div class="skills__icon">
-            <img src="assets/undraw_active_options_re_8rj3.svg" alt="">
-          </div>
-          <div class="skills__stack">
+      <section id="skills" class="skills w-full my-20">
+        <div class="w-full text-white text-2xl font-bold flex justify-center mb-10">
+          <h1>Skills</h1>
+        </div>
+        <div class="flex-col sm:flex-row flex justify-center">
+          <div class="flex-col flex text-white justify-center text-2xl w-full sm:w-52 content-center text-center">
             <span>Quasar</span>
             <span>VueJS</span>
             <span>ViteJS</span>
@@ -103,31 +102,36 @@
             <span>TailWind CSS</span>
             <span>Cypress</span>
           </div>
-        </div>
-      </section>
-      <section id="contact" class="footer hidden">
-        <div class="footer__typer">
-          let's
-          <span class="typer footer__typer" id="main" data-words="drink a coffee?,drink a cappuccino?,talk about crazy theories?" data-delay="50" data-deleteDelay="1000"></span>
-          <span class="cursor" data-owner="main"></span>
-        </div>
-        <div class="footer__contact">
-          <span>
-            (16) 99107-6992
-          </span>
-          <span>
-            far3ll.274@gmail.com
-          </span>
-          <div class="footer__socials">
-            <span><img src="assets/facebook.png" alt="facebook"></span>
-            <span><img src="assets/github.png" alt="github"></span>
-            <span><img src="assets/logotipo-do-linkedin.png" alt="linkedin"></span>
-            <!-- TODO youtube chanel -->
-            <!-- <span><img src="assets/logotipo-do-linkedin.png" alt="linkedin"></span> -->
+          <div class="flex justify-center mt-10">
+            <img class="w-[200px]" src="assets/undraw_active_options_re_8rj3.svg" alt="">
           </div>
         </div>
-        <div class="footer__icon">
-          <img src="assets/undraw_hang_out_re_udl4.svg" alt="">
+      </section>
+      <section id="contact" class="footer w-full mt-20 rounded-md shadow-md">
+        <div class="flex flex-col">
+          <div class="footer__typer text-lg sm:text-2xl w-full">
+            let's
+            <span class="typer footer__typer text-lg sm:text-2xl" id="main" data-words="drink a coffee?,drink a cappuccino?,talk about crazy theories?" data-delay="50" data-deleteDelay="1000"></span>
+            <span class="cursor" data-owner="main"></span>
+          </div>
+          <div class="footer__contact">
+            <span>
+              (16) 99107-6992
+            </span>
+            <span>
+              far3ll.274@gmail.com
+            </span>
+            <div class="flex gap-10 mt-10 justify-center sm:justify-start  w-full">
+              <span><img class="w-10" src="assets/facebook.png" alt="facebook"></span>
+              <span><img class="w-10" src="assets/github.png" alt="github"></span>
+              <span><img class="w-10" src="assets/logotipo-do-linkedin.png" alt="linkedin"></span>
+              <!-- TODO youtube chanel -->
+              <!-- <span><img src="assets/logotipo-do-linkedin.png" alt="linkedin"></span> -->
+            </div>
+          </div>
+          <div class="footer__icon w-[100px] sm:w-[250px] ">
+            <img src="assets/undraw_hang_out_re_udl4.svg" alt="">
+          </div>
         </div>
         <!-- TODO go top <button> -->
       </section>

@@ -24,13 +24,35 @@
     // }
   }
 
-  &__card {
+  .card {
     // display: flex;
     // flex-direction: column;
     // border-radius: 5px;
     // width: 300px;
     // height: 400px;
     // background-color: $secondary;
+    &__space {
+      transition: 1s;
+      cursor: pointer;
+      
+      &:hover {
+        transition: 1s;
+        transform: scale(1.02);
+      }
+    }
+
+    &__text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 16px;     /* fallback */
+      max-height: 34px;      /* fallback */
+      -webkit-line-clamp: 2; /* number of lines to show */
+      -webkit-box-orient: vertical;
+      // line-height: 1.8em;
+   }
+
+   
   }
 
   &__card-img {

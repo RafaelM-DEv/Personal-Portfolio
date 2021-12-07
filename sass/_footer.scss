@@ -28,20 +28,20 @@
     }
   }
 
-  &__socials {
-    img {
-      width: 25px;
-      margin: 5px 10px;
-    }
-  }
+  // &__socials {
+  //   img {
+  //     width: 25px;
+  //     margin: 5px 10px;
+  //   }
+  // }
 
   &__icon {
     position: absolute;
     align-self: flex-end;
     justify-self: end;
-    img {
-      width: 250px;
-    }
+    // img {
+    //   width: 250px;
+    // }
   }
 }
 

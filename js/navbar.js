@@ -1,4 +1,4 @@
-const container = document.querySelector('.container')
+const container = document.querySelector('.ref')
 const header = document.querySelector('.header')
 const navbar = document.querySelector('.header__navbar')
 const menu = document.querySelector('.header__menu')
@@ -25,6 +25,7 @@ menu.addEventListener('click', () => {
     menu.innerHTML = `
     <style>
     .header__menu {
+      margin-top: 2px;
       border-top: 2px solid white;
     }
     .header__menu::before {
